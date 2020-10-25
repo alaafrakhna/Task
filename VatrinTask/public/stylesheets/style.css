@@ -1,0 +1,106 @@
+body {
+  margin: 0 auto;
+  padding: 60px 0px;
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  line-height: 1.5;
+}
+.login-form-title {
+  font-size: 29px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 1.4;
+  color: #333333;
+}
+.login-form-input {
+  border: 0px;
+  border-bottom: 2px solid #d9d9d9;
+  border-radius: 0px;
+  line-height: 1.2;
+  height: 52px;
+  padding: 0 5px;
+  font-size: 18px;
+  color:#999999;
+  font-family: sans-serif;
+  font-weight: 500;
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0,123,255,.25) !important;
+  position: relative;
+}
+.login-form-input:focus{
+  border-color: #57b846;
+}
+.login-form-btn{
+  margin-top: 40px;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  background-color: #57b846;
+  border-radius: 25px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  outline: 0px !important;
+  border: 0px;
+  box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgb(87 184 70 / 50%);
+  -o-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(87, 184, 70, 0.5);
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.login-form-btn:hover {
+  background-color: #333333;
+  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+  -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+}
+.login-form-desc{
+  text-align: center;
+  width: 100%;
+  color: #656363;
+}
+.login-form-desc span a{
+  color:#57b846
+}
+.create-form .login-form-title, .edit-profile-form .login-form-title{
+  margin-bottom: 16px;
+}
+.create-form .login-form-input, .edit-profile-form .login-form-input{
+  font-size: 15px;
+}
+.sub-title{
+  text-align: center;
+  color: #656363;
+  font-weight: normal;
+}
+.profile-img {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50%;
+  background: #f0f0f0;
+  border: 1px solid #f0f0f0;
+}
+.profile-img img{
+  width: 100%;
+  max-width: 93px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 7px;
+}
+.error{
+  color: red;
+  font-size: 13px;
+}

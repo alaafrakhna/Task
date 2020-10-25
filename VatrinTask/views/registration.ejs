@@ -1,0 +1,81 @@
+<% var title = 'Authentication Example' %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+  <script>
+ 
+
+  </script>
+</head>
+
+<body>
+
+  <section class="create-account-page"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-5 col-sm-10 col-10 mx-auto">
+          <form class="create-form validate-form" method="POST" action="/regfunction" >
+            <h4 class="login-form-title">Register Form</h4>
+            <h5 class="mb-5 sub-title"> Please fill in this form to create an account.</h5>
+           
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="text" class="form-control login-form-input" placeholder="First Name" name="firstName" required minlength="3"/>
+              </div>
+            </div>
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="text" class="form-control login-form-input" placeholder="Last Name" name="lastName" required minlength="3"/>
+              </div>
+            </div>
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="text" class="form-control login-form-input" placeholder="Phone Number" name="PhoneNumber" required/>
+              </div>
+            </div>
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="date" class="form-control login-form-input"  placeholder="Date Of Birth" name="DOB"  required/>
+              </div>
+            </div>
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="email" class="form-control login-form-input" placeholder="Email" name="email" required minlength="8"/>
+              </div>
+            </div>
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="password" class="form-control login-form-input" placeholder="Password" name="password" required minlength="8"/>
+              </div>
+            </div>
+
+
+
+            <div class="form-row mb-4">
+              <div class="col">
+                <button class="login-form-btn  ">
+                  Creat Account
+                </button>
+              </div>
+            </div>
+           
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<% var title = 'Authentication Example' %>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+  <script>
+    console.log("hhhhh");
+
+  </script>
+</head>
+
+<body>
+
+  <section class="login-page"> 
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-10 col-10 mx-auto">
+          <form class="login-form validate-form" method="POST" action="/loginfunction">
+            <div class="col mb-5">
+              <h4 class="login-form-title">Login to your account</h4>
+            </div>
+            <div class="form-row mb-4">
+              <div class="col">
+                <input type="email" class="form-control login-form-input" placeholder="Email" name="email" required/>
+              </div>
+            </div>
+            <div class="form-row mb-4">
+              <div class="col">
+                <input type="password" class="form-control login-form-input" placeholder="Password" name="password" required/>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col" >
+                <p class="error"><%- message %></p>
+              </div>
+            </div>
+           
+            <div class="form-row mb-4">
+              <div class="col">
+                <button class="login-form-btn  ">
+                  Login
+                </button>
+              </div>
+            </div>
+            <div class="form-row mb-4 mt-5 mx-auto"> <p class="login-form-desc">Don’t have an account? <span><a href="/registration">Creat Account</a></span></p></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
