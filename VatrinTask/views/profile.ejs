@@ -1,0 +1,79 @@
+<% var title = 'Authentication Example' %>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="/stylesheets/style.css" type="text/css">
+</head>
+<body>
+
+  <section class="profile-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="header"><a href="/logout">logout</a></div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-10 col-10 mx-auto">
+          <h4 class="login-form-title">User Profile Card</h4>
+          <div class="profile-img mx-auto">
+            <img src="/images/employees.png" alt="profile image">
+          </div>
+          
+          <form class="edit-profile-form validate-form" method="POST" action="/edit_profile">
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="text" class="form-control login-form-input" placeholder="First Name" name="firstName" value="<%= user.firstName %>" required minlength="3"/>
+              </div>
+            </div>
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="text" class="form-control login-form-input" placeholder="Last Name " name="lastName" value="<%= user.lastName %>" required minlength="3"/>
+              </div>
+            </div>
+
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="email" class="form-control login-form-input" placeholder="Email" name="email" value="<%=  user.email  %>" required minlength="8"/>
+              </div>
+            </div>
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="password" class="form-control login-form-input" placeholder="Password" name="password"  value="<%=  user.password  %>"  required minlength="8"/>
+              </div>
+            </div>
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="text" class="form-control login-form-input" placeholder="Phone Number" name="PhoneNumber" value="<%= user.PhoneNumber  %>" required />
+              </div>
+            </div>
+
+
+            <div class="form-row mb-2">
+              <div class="col">
+                <input type="date" class="form-control login-form-input" placeholder="Date Of Birth" name="DOB" value="<%= user.DOB %>"  required />
+              </div>
+            </div>
+
+            <div class="form-row mb-4">
+              <div class="col">
+                <button class="login-form-btn  ">
+                  Update Profile
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+<h2 style="text-align:center"></h2>
+
+</body>
+</html>
